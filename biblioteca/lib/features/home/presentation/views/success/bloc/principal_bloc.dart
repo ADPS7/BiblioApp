@@ -1,8 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../../core/services/http_service.dart';
-
-part 'principal_event.dart';
-part 'principal_state.dart';
+import 'principal_state.dart';
+import 'principal_event.dart';
 
 class PrincipalBloc extends Bloc<PrincipalEvent, PrincipalState> {
   final HttpService _http = HttpService();

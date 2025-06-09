@@ -12,7 +12,7 @@ class Lib extends StatelessWidget {
     return MaterialApp(
       title: 'Biblioteca Portatil',
       debugShowCheckedModeBanner: false,
-      home: Loadingini(),
+      home: PrincipalScreen(),
     );
   }
 }

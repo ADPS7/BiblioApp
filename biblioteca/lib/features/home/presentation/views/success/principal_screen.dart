@@ -3,6 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'results_screen.dart';
 import 'bloc/principal_bloc.dart';
+import 'bloc/principal_state.dart';
+import 'bloc/principal_event.dart';
 
 class PrincipalScreen extends StatelessWidget {
   PrincipalScreen({super.key});
