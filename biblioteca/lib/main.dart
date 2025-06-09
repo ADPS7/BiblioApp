@@ -10,6 +10,7 @@ class Lib extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Biblioteca Portatil',
+      debugShowCheckedModeBanner: false,
       home: Loadingini(),
     );
   }
