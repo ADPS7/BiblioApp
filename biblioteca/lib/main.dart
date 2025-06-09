@@ -1,5 +1,6 @@
 import 'package:biblioteca/features/home/presentation/views/loadingview.dart';
 import 'package:flutter/material.dart';
+import 'features/home/presentation/views/initial_view.dart';
 import 'features/home/presentation/views/success/principal_screen.dart'; 
 
 void main(){
@@ -12,7 +13,7 @@ class Lib extends StatelessWidget {
     return MaterialApp(
       title: 'Biblioteca Portatil',
       debugShowCheckedModeBanner: false,
-      home: PrincipalScreen(),
+      home: Initial()
     );
   }
 }
