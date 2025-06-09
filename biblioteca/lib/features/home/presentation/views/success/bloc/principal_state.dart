@@ -1,22 +1,36 @@
-part of 'principal_bloc.dart';
+import 'package:equatable/equatable.dart';
 
-abstract class PrincipalState {}
+abstract class PrincipalState extends Equatable {
+  const PrincipalState();
+
+  @override
+  List<Object?> get props => [];
+}
 
 class InitialPrincipalState extends PrincipalState {}
 
 class LoadingPrincipalState extends PrincipalState {}
 
 class SuccessPrincipalState extends PrincipalState {
-  final List books;
+  final List<dynamic> books;
   final int totalResults;
 
-  SuccessPrincipalState({required this.books, required this.totalResults});
+  const SuccessPrincipalState({
+    required this.books,
+    required this.totalResults,
+  });
+
+  @override
+  List<Object?> get props => [books, totalResults];
 }
+
+class EmptyPrincipalState extends PrincipalState {}
 
 class ErrorPrincipalState extends PrincipalState {
   final String message;
 
-  ErrorPrincipalState({required this.message});
-}
+  const ErrorPrincipalState({required this.message});
 
-class EmptyPrincipalState extends PrincipalState {}
+  @override
+  List<Object?> get props => [message];
+}
