@@ -6,11 +6,14 @@ class Errorini extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.limeAccent,
+      backgroundColor: const Color.fromARGB(255, 235, 166, 229),
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 100, 97, 97),
         centerTitle: true,
-        title: Text('Error de carga', style: TextStyle(color: Colors.black)),
+        title: Text(
+          'Error de carga',
+          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+        ),
       ),
       body: Stack(
         children: [
@@ -24,25 +27,29 @@ class Errorini extends StatelessWidget {
                 SizedBox(height: 30),
                 Text(
                   'Muchas solicitudes para el ',
-                  style: TextStyle(fontSize: 25, color: Colors.red),
+                  style: TextStyle(
+                    fontSize: 25,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 Text(
                   'pinguino lector',
-                  style: TextStyle(fontSize: 25, color: Colors.red),
+                  style: TextStyle(
+                    fontSize: 25,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 SizedBox(height: 15),
-                Text(
-                  '(Reintentelo mas tarde)',
-                  style: TextStyle(color: Colors.red, fontSize: 15),
-                ),
                 SizedBox(height: 19),
                 TextButton(
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all<Color>(
-                      Colors.transparent,
+                      Colors.black,
                     ),
                     foregroundColor: MaterialStateProperty.all<Color>(
-                      Colors.black,
+                      Colors.white,
                     ),
                   ),
                   onPressed: () {},
