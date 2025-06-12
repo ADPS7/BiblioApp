@@ -3,7 +3,7 @@ import 'package:biblioteca/screens/errorview.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
 
-import 'screens/error_screen.dart';
+
 import 'screens/home_screen.dart';
 import 'screens/initial_screen.dart';
 import 'screens/loading_screen.dart';
