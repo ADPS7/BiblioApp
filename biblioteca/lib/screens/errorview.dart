@@ -1,4 +1,9 @@
+import 'package:biblioteca/screens/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import '../bloc/book_state.dart';
+import '../bloc/book_bloc.dart';
+import '../bloc/book_event.dart';
 
 class Errorini extends StatelessWidget {
   const Errorini({super.key});
@@ -52,7 +57,9 @@ class Errorini extends StatelessWidget {
                       Colors.white,
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    context.read<BookBloc>().add(GotoHome());
+                  },
                   child: Text('Regresar'),
                 ),
               ],
