@@ -1,4 +1,5 @@
 // lib/app_view
+import 'package:biblioteca/screens/errorview.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +28,7 @@ class AppView extends StatelessWidget {
         } else if (state is BookLoaded) {
           return ResultsScreen(books: state.books);
         } else if (state is BookError) {
-          return ErrorScreen();
+          return Errorini();
         } else {
           return const InitialScreen(); // fallback
         }
